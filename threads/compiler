@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo "start!!"
+rm ./a.out
+arg1=${1}
+echo "compile  ${arg1} ..."
+g++ -std=c++11 -pthread ${arg1}
+echo "end"
